@@ -76,11 +76,7 @@ except:
 try:
         dump_csv(collection_category_tag_transformation
                 (extract_data(spark=spark_session,table_name=configur.get('table_extract','collection_category_tag'),
-<<<<<<< HEAD
-                         password=PASSWORD,user_name=USERNAME,fetech_size=configur.get('size','fetch_size'),conn_url=CONN_URL,column_list=['id','category_id','tag_id'])
-=======
-                         password=PASSWORD,user_name=USERNAME,fetech_size=configur.get('size','fetch_size'),conn_url=CONN_URL)
->>>>>>> c5fe626bf90a975b2e1e7a7a7d90b5e5ef67370e
+                password=PASSWORD,user_name=USERNAME,fetech_size=configur.get('size','fetch_size'),conn_url=CONN_URL,column_list=['id','category_id','tag_id'])
                 ),file_path=databse_csv_path,table_name=configur.get('table_extract','collection_category_tag'))
         logging.info('--collection category tag table--')        
 except:

@@ -18,11 +18,7 @@ def extract_data(spark,table_name='',password=None,user_name=None,fetech_size=No
     print(table_name,password,user_name,conn_url)
     mysqlldf=spark.read \
     .format("jdbc") \
-<<<<<<< HEAD
     .option("driver","com.mysql.cj.jdbc.Driver") \
-=======
-    .option("driver","com.mysql.jdbc.Driver") \
->>>>>>> c5fe626bf90a975b2e1e7a7a7d90b5e5ef67370e
     .option("url",conn_url) \
     .option("dbtable",table_name) \
     .option("user",user_name) \
